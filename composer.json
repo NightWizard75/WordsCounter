@@ -1,0 +1,17 @@
+{
+    "name": "vladi/words_counter",
+    "description": "Counts the word that is most often found in the file",
+    "type": "project",
+    "authors": [
+        {
+            "name": "NightWizard75",
+            "email": "vladimir@valyakin.ru"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Counters\\": "src/"
+        }
+    }
+}
