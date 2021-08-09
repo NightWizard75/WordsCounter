@@ -38,7 +38,7 @@ class FileReader implements IReader
             $symbol .= ($bytesCount>1)
                 ? fread($fileHandler, $bytesCount - 1)
                 : '';
-            if (!preg_match('/\w|[а-я]|[А-Я]/', $symbol)) {
+            if (!preg_match('/\w/u', $symbol)) {
                 if (!empty($word)) {
                     yield trim($word);
                     $word = '';
